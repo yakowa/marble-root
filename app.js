@@ -92,6 +92,7 @@ ${inp_manifest ? '    <link rel="manifest" href="' + inp_manifest + '/>' : skipp
 </head>
 
 <body>
+<noscript>You need to enable JavaScript to run this app.</noscript>
 
 <!-- Your page content goes here! -->
 
