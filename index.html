@@ -1,0 +1,176 @@
+<!--Name: Marble Root.html
+    Description: HTML5 Base Generator
+    Created: 15/06/2021
+    Modified: 15/06/2021 - Changed project to HTML & JS from PHP
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marble Root</title>
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <nav>
+        <h1>Marble Root</h1>
+        <h3 class="desc">Boilerplate HTML Generator</h3>
+        <p>Created by <a href="https://jacobem.com/" target="_blank">JacobEM.com</a></p>
+    </nav>
+
+
+    <div class="box">
+        <h1>Project Details</h1>
+        <p>Note, you can fill in as many or as little of these options as you would like</p>
+        <div class="details">
+
+            <div class="category">
+                <h3>General</h3>
+                <label for="name">Name</label>
+                <br>
+                <input type="text" id="name" name="name" placeholder="My Amazing Project">
+        
+                <br class="skip">
+                
+                <label for="desc">Description</label>
+                <br>
+                <input type="text" id="desc" name="desc" placeholder="My project does xyz, while abc is doing 123!">
+                
+                <br class="skip">
+        
+                <label for="lang">Language</label>
+                <br>
+                <input type="text" id="lang" name="lang" placeholder="en">
+            </div>
+            <br>
+    
+            <div class="category">
+                <h3>Theme</h3>
+                <label for="theme">Theme Colour</label>
+                <br>
+                <input type="color" id="theme" name="theme">
+                <br>
+                <label for="theme2">or input your own HEX code</label>
+                <br>
+                <input type="text" id="theme2" name="theme2" maxlength="7" placeholder="#ffffff">
+    
+                <br class="skip">
+    
+                <label for="icon">Icon</label>
+                <br>
+                <input type="text" id="icon" name="icon" placeholder="https://example.com/favicon.ico">
+    
+                <br class="skip">
+    
+                <label for="icon32x">Icon 32x</label>
+                <br>
+                <input type="text" id="icon32x" name="icon32x" placeholder="https://example.com/favicon32x.png">
+    
+                <br class="skip">
+    
+                <label for="manifest">Site Manifest</label>
+                <br>
+                <input type="text" id="manifest" name="manifest" placeholder="https://example.com/site.webmanifest">
+            </div>
+    
+            <div class="category">
+                <h3>Seo</h3>
+                <label for="keywords">Keywords</label>
+                <br>
+                <input type="text" id="keywords" name="keywords" placeholder="pets, cats, dogs, birds">
+    
+                <br class="skip">
+    
+                <label for="author">Author</label>
+                <br>
+                <input type="text" id="author" name="author" placeholder="ToastMan">
+    
+                <br class="skip">
+
+                <label for="copyright">Copyright</label>
+                <br>
+                <input type="text" id="copyright" name="copyright" placeholder="This site has a Creative Commons Attribution Non-commercial No-Derivatives License. Please credit xyz, example.com.">
+
+                <br class="skip">
+
+                <label for="canonical">Canonical</label>
+                <br>
+                <input type="text" id="canonical" name="canonical" placeholder="https://example.com">
+            </div>
+            
+            <div class="category">
+                <h3>External</h3>
+                <label for="twitCreator">Twitter Creator</label>
+                <br>
+                <input type="text" id="twitCreator" name="twitCreator" placeholder="@CoolDev123">
+
+                <br class="skip">
+
+                <label for="twitSite">Twitter Site</label>
+                <br>
+                <input type="text" id="twitSite" name="twitSite" placeholder="@MyAmazingProject">
+
+                <br class="skip">
+
+                <label for="ogUrl">OG URL</label>
+                <br>
+                <input type="text" id="ogUrl" name="ogUrl" placeholder="https://example.com">
+
+                <br class="skip">
+
+                <label for="ogImg">OG Img</label>
+                <br>
+                <input type="text" id="ogImg" name="ogImg" placeholder="https://example.com/assets/smallIcon.png">
+            </div>
+
+            <div class="category" style="width: 100%;">
+                <h3>Frameworks</h3>
+                <div>
+                    <input type="checkbox" id="bs5" name="bs5">
+                    <label for="bs5">Twitter Bootstrap 5</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="vue" name="vue">
+                    <label for="vue">Vue.js</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="react" name="react">
+                    <label for="react">React</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="ang" name="ang">
+                    <label for="ang">AngularJS</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="fa" name="fa">
+                    <label for="fa">Font Awesome</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="tw" name="tw">
+                    <label for="tw">Twemoji</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="jq" name="jq">
+                    <label for="jq">jQuery</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="btn-wrapper">
+        <button onClick="submit()">Build</button>        
+    </div>
+    
+    <div class="box" id="wrapper" style="display: none;">
+        <h1>Result</h1>
+        <a style="float: right; color: #000;" href="javascript:void(0)" onclick="getCode()">Copy Code</a>
+        <pre id="result"></pre>
+    </div>
+
+    <nav style="margin-top: 5rem; justify-content: center;">
+        <p>Created by <a href="https://jacobem.com/" target="_blank">JacobEM.com</a></p>
+    </nav>
+</body>
+</html>
